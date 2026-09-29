@@ -5,8 +5,8 @@ services:
     plan: free
     region: frankfurt
     branch: main
-    buildCommand: corepack enable && corepack prepare pnpm@11.25.0 --activate && pnpm install --frozen-lockfile && pnpm build:render
-    startCommand: pnpm start:render
+    buildCommand: corepack pnpm install --frozen-lockfile --prod=false && corepack pnpm build:render
+    startCommand: node scripts/run-render.mjs start
     healthCheckPath: /api/health
     autoDeployTrigger: commit
     envVars:
