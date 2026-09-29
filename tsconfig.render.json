@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@/lib/db": ["./lib/db-node.ts"],
+      "@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", "examples", "ZERO CLOCK"]
+}

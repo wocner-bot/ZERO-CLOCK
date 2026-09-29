@@ -1,0 +1,874 @@
+{
+  "Часы апокалипсиса — Наблюдение за машинным интеллектом": {
+    "en": "Apocalypse Clock — Monitoring Machine Intelligence",
+    "es": "Reloj del Apocalipsis — Observatorio de la inteligencia artificial"
+  },
+  "Реальные события развития AI и открытая сценарная модель: часы, новости, история и источники.": {
+    "en": "Real-world AI developments and an open scenario model: clock, news, history and sources.",
+    "es": "Avances reales de la IA y un modelo de escenario abierto: reloj, noticias, historia y fuentes."
+  },
+  "Все события": {
+    "en": "All events",
+    "es": "Todos los eventos"
+  },
+  "Связь недоступна. Показана последняя загруженная подборка.": {
+    "en": "Connection unavailable. Showing the last loaded collection.",
+    "es": "Conexión no disponible. Se muestra la última selección cargada."
+  },
+  "Обновление недоступно. Сохранённая лента доступна; её актуальность не подтверждена.": {
+    "en": "Updates unavailable. The saved feed is accessible, but its freshness is unverified.",
+    "es": "Actualización no disponible. Puedes consultar las noticias guardadas, pero no se ha confirmado su vigencia."
+  },
+  "Источники: {0}/4 доступны": {
+    "en": "Sources: {0}/4 available",
+    "es": "Fuentes: {0}/4 disponibles"
+  },
+  "Тбилиси": {
+    "en": "Tbilisi",
+    "es": "Tiflis"
+  },
+  "Проверенная подборка · 29 сентября 2026": {
+    "en": "Reviewed collection · September 29, 2026",
+    "es": "Selección revisada · 29 de septiembre de 2026"
+  },
+  "Дата приблизилась на {0} дн.": {
+    "en": "The date moved closer by {0} days.",
+    "es": "La fecha se ha acercado {0} días."
+  },
+  "Дата отдалилась на {0} дн.": {
+    "en": "The date moved further away by {0} days.",
+    "es": "La fecha se ha alejado {0} días."
+  },
+  "Дата не изменилась.": {
+    "en": "The date has not changed.",
+    "es": "La fecha no ha cambiado."
+  },
+  "Не удалось обновить ленту. Часы и события сохранены. Попробуйте ещё раз.": {
+    "en": "Unable to refresh the feed. The clock and events are preserved. Please try again.",
+    "es": "No se pudieron actualizar las noticias. El reloj y los eventos se conservan. Inténtalo de nuevo."
+  },
+  "Новые события не удалось проверить. Часы и загруженная лента сохранены.": {
+    "en": "Unable to check for new events. The clock and loaded feed are preserved.",
+    "es": "No se pudieron buscar nuevos eventos. El reloj y las noticias cargadas se conservan."
+  },
+  "Показан сохранённый результат проверки. ": {
+    "en": "Showing cached check results. ",
+    "es": "Se muestran los resultados guardados de la consulta. "
+  },
+  "Добавлено событий: {0}.": {
+    "en": "Events added: {0}.",
+    "es": "Eventos añadidos: {0}."
+  },
+  "Загружено сверх стартовой подборки событий: {0}.": {
+    "en": "Events loaded beyond the initial collection: {0}.",
+    "es": "Eventos cargados además de la selección inicial: {0}."
+  },
+  "Новых событий нет.": {
+    "en": "No new events.",
+    "es": "No hay eventos nuevos."
+  },
+  "Новых событий в доступных источниках нет.": {
+    "en": "No new events from available sources.",
+    "es": "No hay eventos nuevos en las fuentes disponibles."
+  },
+  " Не все источники доступны.": {
+    "en": " Not all sources are available.",
+    "es": " No todas las fuentes están disponibles."
+  },
+  "Загружаем новые события. Пока показана стартовая подборка.": {
+    "en": "Loading new events. Showing the initial collection for now.",
+    "es": "Cargando eventos nuevos. Por ahora se muestra la selección inicial."
+  },
+  "Часы апокалипсиса": {
+    "en": "Apocalypse Clock",
+    "es": "Reloj del Apocalipsis"
+  },
+  "НАБЛЮДЕНИЕ ЗА МАШИННЫМ ИНТЕЛЛЕКТОМ": {
+    "en": "MONITORING MACHINE INTELLIGENCE",
+    "es": "OBSERVATORIO DE LA INTELIGENCIA ARTIFICIAL"
+  },
+  "Основная навигация": {
+    "en": "Main navigation",
+    "es": "Navegación principal"
+  },
+  "Мониторинг": {
+    "en": "Monitor",
+    "es": "Monitor"
+  },
+  "История AI": {
+    "en": "AI history",
+    "es": "Historia de la IA"
+  },
+  "Методология": {
+    "en": "Methodology",
+    "es": "Metodología"
+  },
+  "Язык интерфейса": {
+    "en": "Interface language",
+    "es": "Idioma de la interfaz"
+  },
+  "До условной даты {0} дней {1} часов {2} минут {3} секунд": {
+    "en": "Until the scenario date: {0} days, {1} hours, {2} minutes, {3} seconds",
+    "es": "Hasta la fecha del escenario: {0} días, {1} horas, {2} minutos y {3} segundos"
+  },
+  "ДНЕЙ": {
+    "en": "DAYS",
+    "es": "DÍAS"
+  },
+  "ЧАСОВ": {
+    "en": "HOURS",
+    "es": "HORAS"
+  },
+  "МИНУТ": {
+    "en": "MINUTES",
+    "es": "MINUTOS"
+  },
+  "СЕКУНД": {
+    "en": "SECONDS",
+    "es": "SEGUNDOS"
+  },
+  "СЦЕНАРНАЯ ДАТА": {
+    "en": "SCENARIO DATE",
+    "es": "FECHA DEL ESCENARIO"
+  },
+  "1 балл индекса = 30 условных дней.": {
+    "en": "1 index point = 30 scenario days.",
+    "es": "1 punto del índice = 30 días del escenario."
+  },
+  "Как рассчитываются часы": {
+    "en": "How the clock is calculated",
+    "es": "Cómo se calcula el reloj"
+  },
+  "СЦЕНАРНЫЙ ИНДЕКС": {
+    "en": "SCENARIO INDEX",
+    "es": "ÍNDICE DEL ESCENARIO"
+  },
+  "из 100": {
+    "en": "out of 100",
+    "es": "de 100"
+  },
+  "Сценарный индекс {0} из 100; чем выше, тем ближе условная дата": {
+    "en": "Scenario index: {0} out of 100; a higher index means a closer scenario date",
+    "es": "Índice del escenario: {0} de 100; cuanto mayor es el índice, más cercana es la fecha"
+  },
+  "0 · дальше": {
+    "en": "0 · further away",
+    "es": "0 · más lejos"
+  },
+  "100 · ближе": {
+    "en": "100 · closer",
+    "es": "100 · más cerca"
+  },
+  "Чем выше индекс,": {
+    "en": "The higher the index,",
+    "es": "Cuanto mayor es el índice,"
+  },
+  "тем ближе условная дата.": {
+    "en": "the closer the scenario date.",
+    "es": "más cercana es la fecha del escenario."
+  },
+  "Баллы модели, не вероятность.": {
+    "en": "Model points, not probability.",
+    "es": "Puntos del modelo, no probabilidad."
+  },
+  "Что изменилось за неделю": {
+    "en": "What changed this week",
+    "es": "Qué ha cambiado esta semana"
+  },
+  "ЗА 7 ДНЕЙ ·": {
+    "en": "LAST 7 DAYS ·",
+    "es": "ÚLTIMOS 7 DÍAS ·"
+  },
+  "Дата не сдвинулась": {
+    "en": "The date has not moved",
+    "es": "La fecha no se ha movido"
+  },
+  "Учтено событий: {0}. Главные причины:": {
+    "en": "Events included: {0}. Main drivers:",
+    "es": "Eventos incluidos: {0}. Motivos principales:"
+  },
+  "За этот период в ленте нет событий. Проверьте актуальность источников.": {
+    "en": "No events in the feed for this period. Check whether the sources are up to date.",
+    "es": "No hay eventos en este período. Comprueba si las fuentes están actualizadas."
+  },
+  "События получили нулевое влияние после применения ограничений.": {
+    "en": "Events had no impact after model limits were applied.",
+    "es": "Los eventos no tuvieron impacto tras aplicar los límites del modelo."
+  },
+  "Проверка источников не чаще раза в 15 минут.": {
+    "en": "Sources are checked at most once every 15 minutes.",
+    "es": "Las fuentes se consultan como máximo una vez cada 15 minutos."
+  },
+  " Следующая возможна после {0} (Тбилиси).": {
+    "en": " Next check available after {0} (Tbilisi).",
+    "es": " Próxima consulta disponible después de las {0} (Tiflis)."
+  },
+  "Проверяем источники": {
+    "en": "Checking sources",
+    "es": "Consultando fuentes"
+  },
+  "Обновить ленту": {
+    "en": "Refresh feed",
+    "es": "Actualizar noticias"
+  },
+  "СОБЫТИЯ В БАЗЕ": {
+    "en": "EVENTS IN DATABASE",
+    "es": "EVENTOS REGISTRADOS"
+  },
+  "подборка + автолента": {
+    "en": "curated + automatic feed",
+    "es": "selección + noticias automáticas"
+  },
+  "СДВИГ ЗА 7 ДНЕЙ": {
+    "en": "7-DAY SHIFT",
+    "es": "CAMBIO EN 7 DÍAS"
+  },
+  "условных дней": {
+    "en": "scenario days",
+    "es": "días del escenario"
+  },
+  "ИСТОРИЧЕСКИЙ АРХИВ": {
+    "en": "HISTORICAL ARCHIVE",
+    "es": "ARCHIVO HISTÓRICO"
+  },
+  "ПРОВЕРКА ПРИ ОТКРЫТИИ": {
+    "en": "CHECKED ON OPENING",
+    "es": "CONSULTA AL ABRIR"
+  },
+  "4 источника": {
+    "en": "4 sources",
+    "es": "4 fuentes"
+  },
+  "статус во вкладке «Источники»": {
+    "en": "status in the Sources tab",
+    "es": "estado en la pestaña Fuentes"
+  },
+  "Лента событий": {
+    "en": "Event feed",
+    "es": "Noticias"
+  },
+  "Источники": {
+    "en": "Sources",
+    "es": "Fuentes"
+  },
+  "Поиск событий": {
+    "en": "Search events",
+    "es": "Buscar eventos"
+  },
+  "Найти событие или модель": {
+    "en": "Find an event or model",
+    "es": "Buscar un evento o modelo"
+  },
+  "Категория событий": {
+    "en": "Event category",
+    "es": "Categoría del evento"
+  },
+  "Модели": {
+    "en": "Models",
+    "es": "Modelos"
+  },
+  "Безопасность": {
+    "en": "Safety",
+    "es": "Seguridad"
+  },
+  "Законы": {
+    "en": "Regulation",
+    "es": "Regulación"
+  },
+  "Инциденты": {
+    "en": "Incidents",
+    "es": "Incidentes"
+  },
+  "Исследования": {
+    "en": "Research",
+    "es": "Investigación"
+  },
+  "ПОСЛЕДНИЕ СОБЫТИЯ": {
+    "en": "LATEST EVENTS",
+    "es": "ÚLTIMOS EVENTOS"
+  },
+  "из": {
+    "en": "of",
+    "es": "de"
+  },
+  "Автооценка · по заголовку": {
+    "en": "Auto-assessed · headline only",
+    "es": "Evaluación automática · solo titular"
+  },
+  "Редакционная оценка": {
+    "en": "Editorial assessment",
+    "es": "Evaluación editorial"
+  },
+  "Заголовок на языке источника": {
+    "en": "Headline in source language",
+    "es": "Titular en el idioma original"
+  },
+  "Сдвига нет: достигнуто ограничение модели.": {
+    "en": "No shift: a model limit has been reached.",
+    "es": "Sin cambio: se ha alcanzado un límite del modelo."
+  },
+  "Вес учтён частично из-за ограничения модели.": {
+    "en": "Weight partially applied due to a model limit.",
+    "es": "Peso aplicado parcialmente por un límite del modelo."
+  },
+  "Почему дата не изменилась": {
+    "en": "Why the date did not change",
+    "es": "Por qué no cambió la fecha"
+  },
+  "Почему меняется дата": {
+    "en": "Why the date changes",
+    "es": "Por qué cambia la fecha"
+  },
+  "Исходный вес:": {
+    "en": "Original weight:",
+    "es": "Peso original:"
+  },
+  ". Учтённый вклад:": {
+    "en": ". Applied contribution:",
+    "es": ". Contribución aplicada:"
+  },
+  "балла.": {
+    "en": "points.",
+    "es": "puntos."
+  },
+  "1 балл = 30 условных дней. Вклад рассчитан последовательно по датам событий с учётом ограничений.": {
+    "en": "1 point = 30 scenario days. Contributions are calculated in date order, accounting for model limits.",
+    "es": "1 punto = 30 días del escenario. Las contribuciones se calculan por orden de fecha, teniendo en cuenta los límites del modelo."
+  },
+  "Читать источник:": {
+    "en": "Read source:",
+    "es": "Leer fuente:"
+  },
+  "Событий не найдено.": {
+    "en": "No events found.",
+    "es": "No se encontraron eventos."
+  },
+  "Сбросить поиск и фильтр": {
+    "en": "Reset search and filter",
+    "es": "Restablecer búsqueda y filtro"
+  },
+  "ДАЙДЖЕСТ ЛЕНТЫ": {
+    "en": "FEED DIGEST",
+    "es": "RESUMEN DE NOTICIAS"
+  },
+  "Условная дата стала ближе.": {
+    "en": "The scenario date moved closer.",
+    "es": "La fecha del escenario se ha acercado."
+  },
+  "Условная дата отдалилась.": {
+    "en": "The scenario date moved further away.",
+    "es": "La fecha del escenario se ha alejado."
+  },
+  "Условная дата не изменилась.": {
+    "en": "The scenario date has not changed.",
+    "es": "La fecha del escenario no ha cambiado."
+  },
+  "Событий за период:": {
+    "en": "Events in this period:",
+    "es": "Eventos en este período:"
+  },
+  "Сводка пересчитывается вместе с загруженной лентой.": {
+    "en": "The summary is recalculated with the loaded feed.",
+    "es": "El resumen se recalcula con las noticias cargadas."
+  },
+  "приближают дату": {
+    "en": "bring the date closer",
+    "es": "acercan la fecha"
+  },
+  "отдаляют дату": {
+    "en": "move the date further away",
+    "es": "alejan la fecha"
+  },
+  "без влияния": {
+    "en": "have no impact",
+    "es": "sin impacto"
+  },
+  "События с наибольшим вкладом": {
+    "en": "Events with the largest contributions",
+    "es": "Eventos con mayor contribución"
+  },
+  "В этом периоде нет событий с ненулевым вкладом.": {
+    "en": "No events with a nonzero contribution in this period.",
+    "es": "No hay eventos con una contribución distinta de cero en este período."
+  },
+  "Период заканчивается датой последней публикации в базе. Дайджест не получает отдельный вес. Это сводка оценок модели, не независимая экспертиза.": {
+    "en": "The period ends on the latest publication date in the database. The digest has no separate weight. It summarizes the model's assessments and is not an independent review.",
+    "es": "El período termina en la fecha de la última publicación registrada. El resumen no tiene un peso propio. Sintetiza las valoraciones del modelo y no constituye una evaluación independiente."
+  },
+  "КАК ЧИТАТЬ ЛЕНТУ": {
+    "en": "HOW TO READ THE FEED",
+    "es": "CÓMO LEER LAS NOTICIAS"
+  },
+  "Приближает: времени до условной даты меньше.": {
+    "en": "Closer: less time until the scenario date.",
+    "es": "Se acerca: queda menos tiempo hasta la fecha del escenario."
+  },
+  "Отдаляет: времени до условной даты больше.": {
+    "en": "Further away: more time until the scenario date.",
+    "es": "Se aleja: queda más tiempo hasta la fecha del escenario."
+  },
+  "Источники подтверждают события. Направление и вес — интерпретация проекта.": {
+    "en": "Sources substantiate events. Direction and weight are the project's interpretation.",
+    "es": "Las fuentes respaldan los eventos. La dirección y el peso son una interpretación del proyecto."
+  },
+  "83 ГОДА РАЗВИТИЯ": {
+    "en": "83 YEARS OF DEVELOPMENT",
+    "es": "83 AÑOS DE DESARROLLO"
+  },
+  "Как мы сюда пришли": {
+    "en": "How we got here",
+    "es": "Cómo hemos llegado hasta aquí"
+  },
+  "Ключевые вехи, не исчерпывающая история.": {
+    "en": "Key milestones, not an exhaustive history.",
+    "es": "Hitos clave, no una historia exhaustiva."
+  },
+  "Архив даёт контекст и не добавляет баллы к индексу.": {
+    "en": "The archive provides context and adds no points to the index.",
+    "es": "El archivo aporta contexto y no añade puntos al índice."
+  },
+  "ОТКРЫТАЯ МОДЕЛЬ / V1.1": {
+    "en": "OPEN MODEL / V1.1",
+    "es": "MODELO ABIERTO / V1.1"
+  },
+  "Факты отдельно. Сценарий отдельно.": {
+    "en": "Facts and scenarios, clearly separated.",
+    "es": "Hechos y escenarios, claramente separados."
+  },
+  "Что означают часы": {
+    "en": "What the clock means",
+    "es": "Qué significa el reloj"
+  },
+  "Дату захвата мира AI научно рассчитать невозможно. Здесь «нулевой час» — художественный сценарий утраты значимого человеческого контроля. Это не часы Bulletin of the Atomic Scientists.": {
+    "en": "There is no scientific way to calculate a date for AI taking over the world. Here, “zero hour” is a fictional scenario of losing meaningful human control. This is not the Bulletin of the Atomic Scientists' clock.",
+    "es": "No existe una forma científica de calcular cuándo la IA dominaría el mundo. Aquí, la «hora cero» es un escenario ficticio de pérdida de control humano significativo. No es el reloj del Bulletin of the Atomic Scientists."
+  },
+  "Исходный индекс 55 выбран автором проекта условно. Он не выведен из истории AI и не означает 55% вероятности. У него нет научной калибровки.": {
+    "en": "The project's author chose an arbitrary starting index of 55. It is not derived from AI history and does not mean a 55% probability. It has no scientific calibration.",
+    "es": "El autor del proyecto eligió arbitrariamente un índice inicial de 55. No se deriva de la historia de la IA ni representa una probabilidad del 55 %. No tiene calibración científica."
+  },
+  "Как считается дата": {
+    "en": "How the date is calculated",
+    "es": "Cómo se calcula la fecha"
+  },
+  "I = clamp(55 + Σ событий + авто, 0, 99)": {
+    "en": "I = clamp(55 + Σ events + auto, 0, 99)",
+    "es": "I = clamp(55 + Σ eventos + auto, 0, 99)"
+  },
+  "Дата = 29.09.2026 + (100 − I) × 30 дней": {
+    "en": "Date = Sep 29, 2026 + (100 − I) × 30 days",
+    "es": "Fecha = 29 sep 2026 + (100 − I) × 30 días"
+  },
+  "Положительный вес приближает дату, отрицательный отдаляет. Начальная дата фиксирована, поэтому перезагрузка не сбрасывает отсчёт. Движение секунд — только визуальный отсчёт; новых фактов оно не создаёт.": {
+    "en": "Positive weights bring the date closer; negative weights move it further away. The baseline date is fixed, so reloading does not reset the countdown. Ticking seconds are a visual countdown only; they create no new facts.",
+    "es": "Los pesos positivos acercan la fecha y los negativos la alejan. La fecha base es fija, por lo que recargar no reinicia la cuenta atrás. El paso de los segundos es solo una representación visual; no genera hechos nuevos."
+  },
+  "Откуда берутся веса": {
+    "en": "Where weights come from",
+    "es": "De dónde salen los pesos"
+  },
+  "У проверенной подборки веса от −2 до +2 баллов. Они учитывают доступность возможностей, злоупотребления и меры контроля. Причина раскрывается у каждого события. Это субъективная оценка проекта.": {
+    "en": "The reviewed collection uses weights from −2 to +2 points. These reflect capability availability, misuse and control measures. Each event includes its rationale. This is the project's subjective assessment.",
+    "es": "La selección revisada utiliza pesos de −2 a +2 puntos. Reflejan la disponibilidad de capacidades, los usos indebidos y las medidas de control. Cada evento incluye su justificación. Es una valoración subjetiva del proyecto."
+  },
+  "Дайджест и историческая шкала повторно не учитываются. Релиз и отчёт о его безопасности разделены только при наличии разных сигналов. Карточки показывают вклад в хронологическом пересчёте: разницу индекса до и после добавления события с учётом всех лимитов. Внутри одной даты сначала идут редакционные события, затем автоматические; порядок фиксирован идентификатором. Новость, найденная с опозданием, может перераспределить вклад карточек. Сумма всех вкладов равна текущему индексу минус исходные 55 баллов.": {
+    "en": "The digest and historical timeline are not counted again. A release and its safety report are separated only when they contain different signals. Cards show contributions in a chronological recalculation: the index difference before and after adding each event, with all limits applied. On the same date, editorial events come before automatic ones; identifiers fix their order. A late-discovered event may redistribute card contributions. All contributions sum to the current index minus the initial 55 points.",
+    "es": "El resumen y la cronología no se contabilizan de nuevo. Un lanzamiento y su informe de seguridad se separan solo si contienen señales distintas. Las tarjetas muestran las contribuciones en un recálculo cronológico: la diferencia del índice antes y después de añadir cada evento, con todos los límites aplicados. En una misma fecha, los eventos editoriales preceden a los automáticos; los identificadores fijan su orden. Un evento descubierto tarde puede redistribuir las contribuciones. La suma de todas ellas equivale al índice actual menos los 55 puntos iniciales."
+  },
+  "Что делает автоматическая лента": {
+    "en": "What the automatic feed does",
+    "es": "Qué hace la recopilación automática"
+  },
+  "При открытии запрашиваются официальные RSS OpenAI и Google, новостные страницы Anthropic и Еврокомиссии. Сервер проверяет их не чаще раза в 15 минут. Новые материалы сохраняются; повторные URL и совпадающие нормализованные заголовки отбрасываются.": {
+    "en": "Opening the site requests the official OpenAI and Google RSS feeds and the Anthropic and European Commission news pages. The server checks them at most once every 15 minutes. New items are saved; duplicate URLs and matching normalized headlines are discarded.",
+    "es": "Al abrir el sitio se consultan los canales RSS oficiales de OpenAI y Google y las páginas de noticias de Anthropic y de la Comisión Europea. El servidor las comprueba como máximo una vez cada 15 minutos. Las publicaciones nuevas se guardan; se descartan las URL duplicadas y los titulares normalizados coincidentes."
+  },
+  "Автоправило анализирует только заголовок: новый релиз +0,5; явно заявленная защитная мера −0,5; неоднозначные новости 0. Суммарный вклад автоматики ограничен ±5 баллами. Это грубая эвристика, она может ошибаться.": {
+    "en": "The automatic rule analyzes headlines only: a new release scores +0.5; an explicitly stated safeguard −0.5; ambiguous news 0. The total automatic contribution is capped at ±5 points. This is a rough heuristic and can be wrong.",
+    "es": "La regla automática analiza solo los titulares: un nuevo lanzamiento suma +0,5; una medida de protección explícita, −0,5; las noticias ambiguas, 0. La contribución automática total se limita a ±5 puntos. Es una heurística aproximada que puede equivocarse."
+  },
+  "Границы покрытия": {
+    "en": "Coverage limits",
+    "es": "Límites de cobertura"
+  },
+  "Подборка не охватывает все новости мира. Редакционная подборка проверена на 29.09.2026. Автоматически загружаются новые публикации с этой даты; ленты могут пропускать события, особенно при изменении структуры сайтов. Автолента не заменяет чтение полного текста.": {
+    "en": "The collection does not cover all world news. The editorial collection was reviewed as of September 29, 2026. New publications from that date onward are loaded automatically; feeds may miss events, especially when website structures change. The automatic feed is no substitute for reading the full text.",
+    "es": "La selección no abarca todas las noticias del mundo. La selección editorial se revisó el 29 de septiembre de 2026. Las publicaciones nuevas a partir de esa fecha se cargan automáticamente; pueden omitirse eventos, especialmente si cambia la estructura de los sitios. La recopilación automática no sustituye la lectura del texto completo."
+  },
+  "Фоновое обновление при закрытом сайте не настроено. При сбоях остаются сохранённые события, а статус показывает недоступные источники.": {
+    "en": "Background updates while the site is closed are not configured. If a check fails, saved events remain available and the status identifies unavailable sources.",
+    "es": "No se han configurado actualizaciones en segundo plano con el sitio cerrado. Si falla una consulta, los eventos guardados siguen disponibles y el estado identifica las fuentes no disponibles."
+  },
+  "Что произойдёт в ноль": {
+    "en": "What happens at zero",
+    "es": "Qué ocurre al llegar a cero"
+  },
+  "Отсчёт остановится с предложением пересмотреть сценарий. Никакого утверждения о реальном наступлении катастрофы не будет. Модель предназначена для обсуждения взаимосвязи развития и контроля AI.": {
+    "en": "The countdown will stop and suggest revisiting the scenario. It will not claim that a real catastrophe has occurred. The model is intended to support discussion about the relationship between AI development and human control.",
+    "es": "La cuenta atrás se detendrá y sugerirá revisar el escenario. No afirmará que haya ocurrido una catástrofe real. El modelo pretende facilitar el debate sobre la relación entre el desarrollo de la IA y el control humano."
+  },
+  "ПРОИСХОЖДЕНИЕ ДАННЫХ": {
+    "en": "DATA PROVENANCE",
+    "es": "PROCEDENCIA DE LOS DATOS"
+  },
+  "Можно проверить каждое событие": {
+    "en": "Every event can be checked",
+    "es": "Cada evento se puede verificar"
+  },
+  "Редакционная проверка: 29 сентября 2026.": {
+    "en": "Editorial review: September 29, 2026.",
+    "es": "Revisión editorial: 29 de septiembre de 2026."
+  },
+  "Сведения производителей не равны независимым испытаниям.": {
+    "en": "Manufacturers' claims are not independent tests.",
+    "es": "Las afirmaciones de los fabricantes no equivalen a pruebas independientes."
+  },
+  "Автоматический RSS + проверенная подборка": {
+    "en": "Automatic RSS + reviewed collection",
+    "es": "RSS automático + selección revisada"
+  },
+  "Автоматическая новостная страница + подборка": {
+    "en": "Automatic news page + curated collection",
+    "es": "Página de noticias automática + selección"
+  },
+  "Еврокомиссия": {
+    "en": "European Commission",
+    "es": "Comisión Europea"
+  },
+  "Новости AI · автоматическая страница + подборка": {
+    "en": "AI news · automatic page + curated collection",
+    "es": "Noticias de IA · página automática + selección"
+  },
+  "(Тбилиси)": {
+    "en": "(Tbilisi)",
+    "es": "(Tiflis)"
+  },
+  "Будущее не предопределено.": {
+    "en": "The future is not predetermined.",
+    "es": "El futuro no está predeterminado."
+  },
+  "О модели": {
+    "en": "About the model",
+    "es": "Sobre el modelo"
+  },
+  "Условный горизонт достигнут. Требуется пересмотр модели, а не объявление катастрофы.": {
+    "en": "The scenario horizon has been reached. The model needs revisiting; this is not a declaration of catastrophe.",
+    "es": "Se ha alcanzado el horizonte del escenario. Es necesario revisar el modelo; esto no es una declaración de catástrofe."
+  },
+  "GPT-6.1 Sol: больше возможностей, ниже стоимость": {
+    "en": "GPT-6.1 Sol: more capabilities, lower cost",
+    "es": "GPT-6.1 Sol: más capacidades, menor coste"
+  },
+  "OpenAI представила новую модель для программирования и профессиональных задач.": {
+    "en": "OpenAI introduced a new model for coding and professional tasks.",
+    "es": "OpenAI presentó un nuevo modelo para programación y tareas profesionales."
+  },
+  "Доступность сильных моделей ускоряет внедрение; это сценарная оценка, а не доказательство потери контроля.": {
+    "en": "Access to powerful models accelerates adoption; this is a scenario assessment, not evidence of lost control.",
+    "es": "El acceso a modelos potentes acelera su adopción; es una valoración del escenario, no una prueba de pérdida de control."
+  },
+  "GPT-6.1 Sol: опубликована оценка опасных возможностей": {
+    "en": "GPT-6.1 Sol: dangerous-capability assessment published",
+    "es": "GPT-6.1 Sol: evaluación de capacidades peligrosas publicada"
+  },
+  "В собственной классификации OpenAI модель достигает Critical для кибервозможностей и High для биологических и химических возможностей.": {
+    "en": "Under OpenAI's own classification, the model reaches Critical for cyber capabilities and High for biological and chemical capabilities.",
+    "es": "Según la clasificación de OpenAI, el modelo alcanza el nivel Critical en capacidades cibernéticas y High en capacidades biológicas y químicas."
+  },
+  "Оценивается дополнительная информация об опасных возможностях, а не повторно факт релиза. Защитные меры существуют; реальный ущерб этим не установлен.": {
+    "en": "This assesses additional information about dangerous capabilities, without counting the release again. Safeguards exist; this does not establish actual harm.",
+    "es": "Se evalúa información adicional sobre capacidades peligrosas, sin volver a contabilizar el lanzamiento. Existen medidas de protección; esto no demuestra daños reales."
+  },
+  "Claude Sonnet 5.5: агентная работа становится доступнее": {
+    "en": "Claude Sonnet 5.5: agentic work becomes more accessible",
+    "es": "Claude Sonnet 5.5: el trabajo con agentes se vuelve más accesible"
+  },
+  "Anthropic сообщает о росте скорости и снижении затрат на типичные задачи относительно Sonnet 5.": {
+    "en": "Anthropic reports faster performance and lower costs for typical tasks compared with Sonnet 5.",
+    "es": "Anthropic informa de una mayor velocidad y menores costes en tareas habituales frente a Sonnet 5."
+  },
+  "Меньшая стоимость и рост агентных возможностей повышают доступность автоматизации.": {
+    "en": "Lower costs and stronger agentic capabilities make automation more accessible.",
+    "es": "Los menores costes y las mayores capacidades de los agentes hacen más accesible la automatización."
+  },
+  "OpenAI предлагает safety cases для обучения моделей": {
+    "en": "OpenAI proposes safety cases for model training",
+    "es": "OpenAI propone argumentos de seguridad para el entrenamiento de modelos"
+  },
+  "Опубликованы рекомендации по изоляции, мониторингу и расследованию несогласованного поведения. Часть практик ещё внедряется.": {
+    "en": "Recommendations cover isolation, monitoring and investigation of misaligned behavior. Some practices are still being implemented.",
+    "es": "Las recomendaciones abarcan el aislamiento, la supervisión y la investigación de comportamientos desalineados. Algunas prácticas aún se están implantando."
+  },
+  "Прозрачные процедуры контроля помогают сдерживанию; вес ограничен, поскольку это рекомендации, а не доказанный результат.": {
+    "en": "Transparent oversight procedures support containment; the weight is limited because these are recommendations, not demonstrated results.",
+    "es": "Los procedimientos de supervisión transparentes favorecen la contención; el peso es limitado porque son recomendaciones, no resultados demostrados."
+  },
+  "Gemini 3.8 Live получает Live Avatar": {
+    "en": "Gemini 3.8 Live gets Live Avatar",
+    "es": "Gemini 3.8 Live incorpora Live Avatar"
+  },
+  "Google показала взаимодействие с одновременной обработкой звука и изображения.": {
+    "en": "Google demonstrated interaction with simultaneous audio and image processing.",
+    "es": "Google mostró una interacción con procesamiento simultáneo de audio e imagen."
+  },
+  "Расширение мультимодальности; прямого свидетельства опасной автономности нет.": {
+    "en": "Expanded multimodality; no direct evidence of dangerous autonomy.",
+    "es": "Ampliación de la multimodalidad; no hay pruebas directas de autonomía peligrosa."
+  },
+  "Anthropic представляет Claude Opus 5.5": {
+    "en": "Anthropic introduces Claude Opus 5.5",
+    "es": "Anthropic presenta Claude Opus 5.5"
+  },
+  "Компания анонсировала новую модель для сложной профессиональной работы.": {
+    "en": "The company announced a new model for complex professional work.",
+    "es": "La empresa anunció un nuevo modelo para trabajos profesionales complejos."
+  },
+  "Рост возможностей агентной работы увеличивает сценарный индекс.": {
+    "en": "Stronger agentic capabilities increase the scenario index.",
+    "es": "El aumento de las capacidades de los agentes eleva el índice del escenario."
+  },
+  "Проверка доступа к чувствительным исследованиям": {
+    "en": "Verifying access to sensitive research",
+    "es": "Verificación del acceso a investigaciones sensibles"
+  },
+  "Anthropic представила Life Sciences Verification Program.": {
+    "en": "Anthropic introduced the Life Sciences Verification Program.",
+    "es": "Anthropic presentó el Life Sciences Verification Program."
+  },
+  "Проверка доступа может уменьшать злоупотребления; эффективность пока не установлена независимо.": {
+    "en": "Access verification may reduce misuse; its effectiveness has not yet been independently established.",
+    "es": "La verificación de acceso puede reducir el uso indebido; su eficacia aún no se ha establecido de forma independiente."
+  },
+  "Gemini 3.8 Live: голосовые агенты с инструментами": {
+    "en": "Gemini 3.8 Live: voice agents with tools",
+    "es": "Gemini 3.8 Live: agentes de voz con herramientas"
+  },
+  "Google представила Live и Live Extended Thinking для диалога и выполнения задач. Публикация обновлена 17 сентября.": {
+    "en": "Google introduced Live and Live Extended Thinking for conversation and task execution. The post was updated on September 17.",
+    "es": "Google presentó Live y Live Extended Thinking para conversar y ejecutar tareas. La publicación se actualizó el 17 de septiembre."
+  },
+  "Инструменты и работа в фоне расширяют область делегируемых AI действий.": {
+    "en": "Tools and background work expand the range of actions that can be delegated to AI.",
+    "es": "Las herramientas y el trabajo en segundo plano amplían las acciones que pueden delegarse a la IA."
+  },
+  "Anthropic публикует отчёт о злоупотреблениях AI": {
+    "en": "Anthropic publishes a report on AI misuse",
+    "es": "Anthropic publica un informe sobre usos indebidos de la IA"
+  },
+  "Компания описала выявленные и пресечённые попытки вредоносного использования Claude.": {
+    "en": "The company described detected and disrupted attempts to use Claude maliciously.",
+    "es": "La empresa describió intentos detectados y frustrados de utilizar Claude de forma maliciosa."
+  },
+  "Отчёт подтверждает злоупотребления, но также их пресечение. Умеренный вес учитывает оба фактора.": {
+    "en": "The report confirms misuse as well as its disruption. A moderate weight accounts for both factors.",
+    "es": "El informe confirma tanto el uso indebido como su interrupción. Un peso moderado tiene en cuenta ambos factores."
+  },
+  "Claude Fable 5.1 и Mythos 5.1": {
+    "en": "Claude Fable 5.1 and Mythos 5.1",
+    "es": "Claude Fable 5.1 y Mythos 5.1"
+  },
+  "Anthropic представила новые модели для программирования, исследований и интеллектуальной работы.": {
+    "en": "Anthropic introduced new models for coding, research and knowledge work.",
+    "es": "Anthropic presentó nuevos modelos para programación, investigación y trabajo intelectual."
+  },
+  "Дальнейший рост исследовательских возможностей; оценки производителя не равны независимой проверке.": {
+    "en": "Further growth in research capabilities; manufacturer assessments are not independent verification.",
+    "es": "Mayor capacidad de investigación; las valoraciones del fabricante no equivalen a una verificación independiente."
+  },
+  "ЕС начинает новый этап применения AI Act": {
+    "en": "EU begins a new phase of AI Act enforcement",
+    "es": "La UE inicia una nueva fase de aplicación del Reglamento de IA"
+  },
+  "Вступают в применение новые требования прозрачности и механизмы надзора. Это не означает, что все положения закона уже применяются.": {
+    "en": "New transparency requirements and oversight mechanisms take effect. This does not mean every provision of the law already applies.",
+    "es": "Entran en vigor nuevos requisitos de transparencia y mecanismos de supervisión. Esto no significa que ya se apliquen todas las disposiciones de la ley."
+  },
+  "Обязательная прозрачность и надзор усиливают подотчётность.": {
+    "en": "Mandatory transparency and oversight strengthen accountability.",
+    "es": "La transparencia y la supervisión obligatorias refuerzan la rendición de cuentas."
+  },
+  "AI Omnibus меняет сроки регулирования": {
+    "en": "AI Omnibus changes regulatory timelines",
+    "es": "AI Omnibus modifica los plazos regulatorios"
+  },
+  "Для систем из Annex III срок перенесён на 2 декабря 2027 года, для ряда систем в продуктах из Annex I — на 2 августа 2028 года.": {
+    "en": "The deadline for Annex III systems moves to December 2, 2027; for certain systems in Annex I products, to August 2, 2028.",
+    "es": "El plazo de los sistemas del anexo III se traslada al 2 de diciembre de 2027; el de determinados sistemas integrados en productos del anexo I, al 2 de agosto de 2028."
+  },
+  "Отсрочка части обязательств увеличивает переходный период. Другие защитные положения сохраняются.": {
+    "en": "Deferring some obligations extends the transition period. Other safeguards remain in place.",
+    "es": "Aplazar algunas obligaciones prolonga el período transitorio. Se mantienen otras disposiciones de protección."
+  },
+  "Математический нейрон": {
+    "en": "The mathematical neuron",
+    "es": "La neurona matemática"
+  },
+  "Маккаллок и Питтс описывают логическую модель нервной активности.": {
+    "en": "McCulloch and Pitts describe a logical model of neural activity.",
+    "es": "McCulloch y Pitts describen un modelo lógico de la actividad neuronal."
+  },
+  "Оригинальная статья": {
+    "en": "Original paper",
+    "es": "Artículo original"
+  },
+  "Может ли машина мыслить?": {
+    "en": "Can a machine think?",
+    "es": "¿Puede pensar una máquina?"
+  },
+  "Алан Тьюринг предлагает игру в имитацию как способ обсуждать машинный интеллект.": {
+    "en": "Alan Turing proposes the imitation game as a way to discuss machine intelligence.",
+    "es": "Alan Turing propone el juego de imitación como una forma de debatir sobre la inteligencia de las máquinas."
+  },
+  "Mind · Алан Тьюринг": {
+    "en": "Mind · Alan Turing",
+    "es": "Mind · Alan Turing"
+  },
+  "Logic Theorist и рождение AI": {
+    "en": "Logic Theorist and the birth of AI",
+    "es": "Logic Theorist y el nacimiento de la IA"
+  },
+  "Один из ранних работающих прототипов доказывает теоремы. Дартмутский семинар формирует новое направление исследований.": {
+    "en": "One of the earliest working prototypes proves theorems. The Dartmouth workshop establishes a new field of research.",
+    "es": "Uno de los primeros prototipos funcionales demuestra teoremas. El taller de Dartmouth establece un nuevo campo de investigación."
+  },
+  "Дартмутский семинар": {
+    "en": "The Dartmouth workshop",
+    "es": "El taller de Dartmouth"
+  },
+  "Исследователи объединяются вокруг идеи искусственного интеллекта как научной дисциплины.": {
+    "en": "Researchers come together around artificial intelligence as a scientific discipline.",
+    "es": "Los investigadores se reúnen en torno a la inteligencia artificial como disciplina científica."
+  },
+  "Перцептрон": {
+    "en": "The perceptron",
+    "es": "El perceptrón"
+  },
+  "Фрэнк Розенблатт описывает обучаемую модель распознавания, один из предшественников современных нейросетей.": {
+    "en": "Frank Rosenblatt describes a trainable recognition model, a predecessor of modern neural networks.",
+    "es": "Frank Rosenblatt describe un modelo de reconocimiento entrenable, precursor de las redes neuronales modernas."
+  },
+  "Программа Джозефа Вейценбаума демонстрирует диалог по текстовым шаблонам, без понимания в человеческом смысле.": {
+    "en": "Joseph Weizenbaum's program demonstrates conversation through text patterns, without understanding in the human sense.",
+    "es": "El programa de Joseph Weizenbaum demuestra el diálogo mediante patrones de texto, sin comprensión en el sentido humano."
+  },
+  "Deep Blue побеждает Каспарова": {
+    "en": "Deep Blue defeats Kasparov",
+    "es": "Deep Blue vence a Kaspárov"
+  },
+  "Специализированная система IBM выигрывает матч у действующего чемпиона мира по шахматам.": {
+    "en": "IBM's specialized system wins a match against the reigning world chess champion.",
+    "es": "El sistema especializado de IBM gana un encuentro al campeón mundial de ajedrez vigente."
+  },
+  "AlexNet и глубокое обучение": {
+    "en": "AlexNet and deep learning",
+    "es": "AlexNet y el aprendizaje profundo"
+  },
+  "Глубокая свёрточная сеть показывает резкий прогресс в классификации ImageNet.": {
+    "en": "A deep convolutional network delivers a sharp improvement in ImageNet classification.",
+    "es": "Una red convolucional profunda logra un gran avance en la clasificación de ImageNet."
+  },
+  "Система DeepMind побеждает Ли Седоля. Прорыв в сложной игре не означает общего интеллекта.": {
+    "en": "DeepMind's system defeats Lee Sedol. A breakthrough in a complex game does not imply general intelligence.",
+    "es": "El sistema de DeepMind vence a Lee Sedol. Un avance en un juego complejo no implica inteligencia general."
+  },
+  "Архитектура Transformer": {
+    "en": "The Transformer architecture",
+    "es": "La arquitectura Transformer"
+  },
+  "Attention Is All You Need предлагает архитектуру, ставшую основой многих современных языковых моделей.": {
+    "en": "Attention Is All You Need proposes an architecture that becomes the foundation of many modern language models.",
+    "es": "Attention Is All You Need propone una arquitectura que se convierte en la base de muchos modelos de lenguaje modernos."
+  },
+  "Авторы исследования · arXiv": {
+    "en": "Research authors · arXiv",
+    "es": "Autores del estudio · arXiv"
+  },
+  "ChatGPT выходит в публичный доступ": {
+    "en": "ChatGPT opens to the public",
+    "es": "ChatGPT se abre al público"
+  },
+  "30 ноября начинается массовое знакомство с разговорными генеративными моделями.": {
+    "en": "November 30 marks the start of mass exposure to conversational generative models.",
+    "es": "El 30 de noviembre comienza el contacto masivo con los modelos generativos conversacionales."
+  },
+  "Принят AI Act": {
+    "en": "The AI Act is adopted",
+    "es": "Se aprueba el Reglamento de IA"
+  },
+  "Европейский союз принимает риск-ориентированную систему регулирования AI с поэтапным применением.": {
+    "en": "The European Union adopts a risk-based AI regulatory framework with phased implementation.",
+    "es": "La Unión Europea adopta un marco regulatorio de la IA basado en riesgos y de aplicación gradual."
+  },
+  "Официальный журнал ЕС": {
+    "en": "Official Journal of the EU",
+    "es": "Diario Oficial de la UE"
+  },
+  "От ответов к действиям": {
+    "en": "From answers to actions",
+    "es": "De las respuestas a las acciones"
+  },
+  "Новые модели используют инструменты и выполняют многошаговые задачи. Надзор и проверка безопасности развиваются одновременно.": {
+    "en": "New models use tools and perform multistep tasks. Oversight and safety testing develop alongside them.",
+    "es": "Los nuevos modelos utilizan herramientas y realizan tareas de varios pasos. La supervisión y las pruebas de seguridad avanzan a la vez."
+  },
+  "Без изменения": {
+    "en": "No change",
+    "es": "Sin cambios"
+  },
+  "Смешанные сигналы в заголовке. Автоматика оставляет нулевой вес до редакционной проверки.": {
+    "en": "Mixed signals in the headline. The automatic rule assigns zero weight pending editorial review.",
+    "es": "Señales mixtas en el titular. La regla automática asigna un peso de cero hasta la revisión editorial."
+  },
+  "Автоправило обнаружило в заголовке заявленную защитную меру. Полный текст и её эффективность не проверены. Низкая уверенность.": {
+    "en": "The automatic rule detected a claimed safeguard in the headline. The full text and its effectiveness have not been verified. Low confidence.",
+    "es": "La regla automática detectó una supuesta medida de protección en el titular. No se han verificado el texto completo ni su eficacia. Confianza baja."
+  },
+  "Автоправило обнаружило анонс модели или агента. Рост опасных возможностей не доказан; это слабый сценарный сигнал. Низкая уверенность.": {
+    "en": "The automatic rule detected a model or agent announcement. Increased dangerous capabilities are unproven; this is a weak scenario signal. Low confidence.",
+    "es": "La regla automática detectó el anuncio de un modelo o agente. No se ha demostrado un aumento de capacidades peligrosas; es una señal débil del escenario. Confianza baja."
+  },
+  "Заголовка недостаточно для вывода о направлении влияния. Часы не меняются.": {
+    "en": "The headline is insufficient to determine the direction of impact. The clock does not change.",
+    "es": "El titular no basta para determinar la dirección del impacto. El reloj no cambia."
+  },
+  "Новая публикация из официальной RSS-ленты. Заголовок сохранён на языке источника; полный текст доступен по ссылке.": {
+    "en": "New publication from an official RSS feed. The headline is kept in the source language; the full text is available via the link.",
+    "es": "Nueva publicación de un canal RSS oficial. El titular se conserva en el idioma original; el texto completo está disponible en el enlace."
+  },
+  "Новая публикация на официальном сайте. Заголовок сохранён на языке источника; полный текст доступен по ссылке.": {
+    "en": "New publication on an official website. The headline is kept in the source language; the full text is available via the link.",
+    "es": "Nueva publicación en un sitio oficial. El titular se conserva en el idioma original; el texto completo está disponible en el enlace."
+  },
+  "Автооценка стадии регулирования по заголовку. Проекты и консультации получают нулевой вес. Юридические последствия требуют проверки полного текста.": {
+    "en": "Automatic headline-based assessment of the regulatory stage. Drafts and consultations receive zero weight. Legal implications require reading the full text.",
+    "es": "Evaluación automática de la fase regulatoria a partir del titular. Los proyectos y las consultas reciben un peso de cero. Las consecuencias jurídicas requieren revisar el texto completo."
+  },
+  "Недоступен · сохранённая подборка": {
+    "en": "Unavailable · saved collection",
+    "es": "No disponible · selección guardada"
+  },
+  "Доступен · загрузка выполнена": {
+    "en": "Available · loaded successfully",
+    "es": "Disponible · carga completada"
+  },
+  "Доступен": {
+    "en": "Available",
+    "es": "Disponible"
+  },
+  " · есть недоступные источники": {
+    "en": " · some sources are unavailable",
+    "es": " · algunas fuentes no están disponibles"
+  },
+  "Проверка": {
+    "en": "Checking",
+    "es": "Consultando"
+  },
+  "Приближает на {0} дн.": {
+    "en": "Closer by {0} days",
+    "es": "Se acerca {0} días"
+  },
+  "Отдаляет на {0} дн.": {
+    "en": "Further away by {0} days",
+    "es": "Se aleja {0} días"
+  }
+}

@@ -1,0 +1,17 @@
+import {db} from '@/lib/db';
+import {seed,checkedAt,type Event} from '@/lib/events';
+import {feedSources,parseFeed,parseNewsPage,dedupe} from '@/lib/feed';
+export async function GET(){
+let saved:Event[]=[];
+let refreshed=0;
+try{const database=db();const existing=await database.prepare('SELECT payload FROM news LIMIT 1000').all<{payload:string}>();saved=existing.results.flatMap(r=>{try{return [JSON.parse(r.payload) as Event]}catch{return []}});
+const statuses=await database.prepare('SELECT id, checked, status FROM feeds').all<{id:string;checked:string;status:string}>();
+await Promise.all(feedSources.map(async source=>{const previous=statuses.results.find(s=>s.id===source.id);if(previous&&Date.now()-Date.parse(previous.checked)<15*60000)return;
+// Persist a short lease before fetching, so parallel opens do not repeatedly fetch feeds.
+const checked=new Date().toISOString();const acquired=await database.prepare("INSERT INTO feeds (id,checked,status) VALUES (?,?,'Проверка') ON CONFLICT(id) DO UPDATE SET checked=excluded.checked,status=excluded.status WHERE feeds.checked < ?").bind(source.id,checked,new Date(Date.now()-15*60000).toISOString()).run();if(!acquired.meta.changes)return;refreshed++;
+let status='Недоступен · сохранённая подборка';try{const response=await fetch(source.url,{headers:{Accept:'application/rss+xml, application/xml, text/xml'},signal:AbortSignal.timeout(12000)});if(!response.ok)throw Error('Feed unavailable');if(Number(response.headers.get('content-length')||0)>3000000)throw Error('Large feed');const xml=await response.text();if(xml.length>3000000)throw Error('Large feed');const articles=dedupe(source.id==='Anthropic'||source.id==='Еврокомиссия'?parseNewsPage(xml,source):parseFeed(xml,source));const inserts=articles.map(e=>database.prepare('INSERT OR IGNORE INTO news(id,payload) VALUES (?,?)').bind(e.id,JSON.stringify(e)));if(inserts.length)await database.batch(inserts);status='Доступен · загрузка выполнена';}catch(e){console.warn('Feed retrieval failed',source.id,e instanceof Error?e.message:'unknown');}
+await database.prepare('UPDATE feeds SET status=? WHERE id=? AND checked=?').bind(status,source.id,checked).run();}));
+const rows=await database.prepare('SELECT payload FROM news LIMIT 1000').all<{payload:string}>();const events=dedupe([...seed,...rows.results.flatMap(r=>{try{return [JSON.parse(r.payload) as Event]}catch{return []}})]).sort((a,b)=>b.date.localeCompare(a.date));const sources=(await database.prepare('SELECT id,checked,status FROM feeds').all<{id:string;checked:string;status:string}>()).results;const healthy=sources.filter(s=>s.status.startsWith('Доступен')).length;const recent=sources.map(s=>s.checked).sort().at(-1)||checkedAt;
+return Response.json({events,sources,refreshed,available:healthy,nextCheckAt:sources.length?new Date(Math.min(...sources.map(s=>Date.parse(s.checked)+15*60000))).toISOString():null,message:`Источники: ${healthy}/4 доступны · проверка ${new Date(recent).toLocaleString('ru-RU',{timeZone:'Asia/Tbilisi',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})} (Тбилиси)${healthy<4?' · есть недоступные источники':''}`},{headers:{'Cache-Control':'no-store'}});
+}catch(e){console.error('News storage unavailable',e instanceof Error?e.message:'unknown');return Response.json({events:dedupe([...seed,...saved]),sources:[],unavailable:true,message:'Обновление недоступно. Сохранённая лента доступна; её актуальность не подтверждена.'},{headers:{'Cache-Control':'no-store'}});}
+}
