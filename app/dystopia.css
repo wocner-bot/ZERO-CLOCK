@@ -1,0 +1,75 @@
+/* Green Argus / Dystopia Clock — v5 visual system. */
+:root{--background:#0c0e11;--foreground:#f1efe5;--muted:#16191d;--muted-foreground:#929aa5;--popover:#171b20;--border:#262b31;--accent:#39dc89;--accent-light:#71ebb0;--positive:#39dc89;--color-ring:#39dc89}
+body{background:radial-gradient(ellipse at 50% 12%,#17191e88,transparent 55%),var(--background);color:var(--foreground)}
+.dystopia-site{max-width:none;padding:0;min-height:100svh;display:flex;flex-direction:column}
+.dystopia-site [hidden]{display:none!important}
+.dystopia-site header{min-height:86px;height:auto;padding:18px 4.45%;border-bottom:1px solid #25292e;gap:28px;flex-wrap:nowrap}
+.dystopia-site .brand{gap:15px;flex:0 1 auto;letter-spacing:0}
+.argus-mark{display:block;flex-shrink:0;width:30px;height:30px;border:2px solid var(--accent);border-radius:50%;position:relative;box-shadow:inset 0 0 12px #39dc890c}
+.argus-mark:after{content:"";position:absolute;width:10px;height:10px;left:8px;top:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px #39dc8980}
+.brand-name{display:block;font-size:16px;font-weight:800;letter-spacing:.25em;line-height:1.3;white-space:nowrap}
+.dystopia-site .brand small{font-size:9px;letter-spacing:.26em;line-height:1.65;color:#929ba8;margin-top:2px;max-width:32em}
+.dystopia-site header nav{order:initial;width:auto;gap:clamp(18px,2.5vw,38px);margin:auto;flex-wrap:nowrap;color:#939ca8;font-size:12px;letter-spacing:.17em;text-transform:uppercase;white-space:nowrap}
+.dystopia-site header nav a{position:relative;min-height:42px}
+.dystopia-site header nav a[aria-current=page]{color:#f4f1e9}
+.dystopia-site header nav a[aria-current=page]:after{content:"";position:absolute;left:0;right:0;bottom:9px;height:1px;background:var(--accent)}
+.dystopia-site .language-switcher{order:initial;margin:0;padding:0;border:0;border-radius:0;background:none;gap:0}
+.dystopia-site .language-switcher button{min-width:36px;min-height:44px;padding:0 6px;color:#78818e;font-size:11px;letter-spacing:.18em;background:none;border-radius:0;font-weight:400}
+.dystopia-site .language-switcher button[aria-pressed=true]{color:#f1efe5;background:none;font-weight:800}
+.dystopia-site .language-switcher button:hover{color:var(--accent)}
+.dystopia-hero{flex:1;width:100%;max-width:1440px;margin:0 auto;padding:99px 6% 100px;text-align:center}
+.hero-intro h1{font-size:clamp(45px,8.35vw,120px);font-weight:800;letter-spacing:.055em;line-height:1.1;margin:0;white-space:nowrap;text-shadow:0 0 40px #edb56a0b}
+.hero-kicker{font-size:clamp(16px,2vw,28px);letter-spacing:.25em;line-height:1.4;font-weight:800;color:var(--accent);margin:9px 0 12px;text-shadow:0 0 25px #39dc8910}
+.hero-tagline{font-size:clamp(15px,1.65vw,24px);letter-spacing:.035em;color:#c3c2bb;margin:0;line-height:1.5}
+.hero-tagline span{color:var(--accent)}
+.glass-countdown{--tube-height:126px;display:grid;grid-template-columns:4fr 2fr 2fr 2fr;gap:clamp(28px,7.6vw,110px);max-width:1170px;margin:49px auto 0}
+.glass-group{position:relative;min-width:0}
+.glass-group:not(:last-child):after{content:":";position:absolute;right:calc(clamp(28px,7.6vw,110px) / -2 - 7px);top:0;height:var(--tube-height);display:flex;align-items:center;font:64px/1 'Courier New',monospace;color:#ff9c39;text-shadow:0 0 16px #ff7a2655}
+.glass-bank{display:flex;gap:10px;justify-content:center}
+.glass-tube{position:relative;display:grid;place-items:center;flex:1;min-width:0;max-width:74px;height:var(--tube-height);border-radius:32px 32px 21px 21px;border:1px solid #664327;background:linear-gradient(90deg,#4a2f1b55,transparent 24%,transparent 75%,#53331d55),linear-gradient(180deg,#392719 0%,#251b13 14%,#171312 83%,#302218 100%);box-shadow:inset 0 0 0 5px #9961320b,0 10px 25px #0004}
+.glass-tube:before{content:"";position:absolute;inset:6px;border:1px solid #ac773522;border-radius:27px 27px 18px 18px;box-shadow:inset 0 0 12px #b36b1712;pointer-events:none}
+.glass-tube:after{content:"";position:absolute;bottom:-11px;left:20%;right:20%;height:11px;background:linear-gradient(#28272b,#1b1d24);border:1px solid #33343b;border-top:0;border-radius:0 0 8px 8px;z-index:-1}
+.glass-numeral{font:600 86px/1 'Courier New',monospace;letter-spacing:-.08em;padding-right:.08em;color:#ffae50;text-shadow:0 0 4px #ffb75d,0 0 12px #ff831e,0 0 30px #fe701880;transform:translateY(2px);font-variant-numeric:tabular-nums}
+.glass-unit{display:block;font-size:10px;letter-spacing:.32em;line-height:1.5;color:#87919f;margin-top:25px}
+.hero-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;max-width:1210px;margin:51px auto 0}
+.hero-metric{min-width:0;display:flex;flex-direction:column;align-items:center}
+.metric-label{font-size:10px;letter-spacing:.24em;color:#87919f;line-height:1.7;text-transform:uppercase}
+.hero-metric strong{display:block;font-size:31px;line-height:1.4;letter-spacing:.005em;font-weight:400;margin:6px 0 1px;font-variant-numeric:tabular-nums}
+.hero-metric strong em{font-size:15px;font-style:normal;color:#828b99}
+.hero-metric small{font-size:12px;line-height:1.7;color:#87919f}
+.hero-metric .metric-amber{color:#ffb052}.hero-metric .metric-green{color:var(--accent)}
+.dystopia-site footer{margin:0;padding:17px 4.45%;border-top:1px solid #25292e;min-height:58px;gap:24px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#818b99;flex-wrap:wrap}
+.dystopia-site footer a{min-height:22px;color:inherit}.dystopia-site footer b{color:var(--accent);font-weight:800}
+/* Shared content views retain the live feed and its explanatory controls. */
+.feed-overview,.dystopia-site .journal{width:91.1%;max-width:1280px;margin:0 auto}
+.feed-overview{padding-top:48px}.dystopia-site .journal{padding-top:36px;padding-bottom:64px;flex:1}
+.dystopia-site .change-summary,.dystopia-site .stats,.dystopia-site .news-item,.dystopia-site .digest,.dystopia-site .method-grid article,.dystopia-site .sources-grid article{background:#11151a;border:1px solid var(--border);border-radius:5px;box-shadow:none}
+.dystopia-site .change-summary{border-top:1px solid #345744}.dystopia-site .stats{margin-top:24px}
+.dystopia-site .label,.dystopia-site .eyebrow{color:#9aa6b3}
+.dystopia-site .status-strip,.dystopia-site .status-strip p,.dystopia-site .refresh-feedback,.dystopia-site .news-item p,.dystopia-site .method-grid p,.dystopia-site .sources-grid p,.dystopia-site .timeline p{color:#a3adb9}
+.dystopia-site .main-tabs{background:transparent!important;border:0;border-bottom:1px solid var(--border);border-radius:0;padding:0!important;gap:25px!important}
+.dystopia-site .main-tabs button{border-radius:0;background:none!important;box-shadow:none!important;color:#929ba8!important;padding:12px 0!important}
+.dystopia-site .main-tabs button[data-state=active]{color:var(--accent)!important;border-bottom:1px solid var(--accent)!important}
+.dystopia-site .main-tabs button>span{background:#1b2923;color:#85d8ae}
+.dystopia-site .search,.dystopia-site .toolbar [data-slot=select-trigger]{background:#101419;border-color:#303842;border-radius:4px}
+.dystopia-site .news-item h2{color:#eeeee6}.dystopia-site .news-item .meta,.dystopia-site .original-language{color:#919daa}
+.dystopia-site .status-strip button,.dystopia-site .empty button{background:#14291f;border-color:#2d674b;color:#6ce7a9;border-radius:4px}
+.dystopia-site .status-strip button:hover{background:#1a3829}
+.dystopia-site .change,.dystopia-site .event-mark{color:#ffb052;background:#302317;border-color:#6c4b2a;border-radius:4px}
+.dystopia-site .change.safe,.dystopia-site .event-mark.safe{color:#50dd94;background:#152a20;border-color:#2c6848}
+.dystopia-site .change.neutral,.dystopia-site .event-mark.neutral{color:#acb5bf;background:#20262d;border-color:#3b444f}
+.dystopia-site .reason,.dystopia-site .method-grid code{background:#192027;color:#bbc6cf;border-radius:4px}
+.dystopia-site .source,.dystopia-site summary,.dystopia-site .timeline a,.dystopia-site .timeline time{color:#70daa4}
+.dystopia-site .digest>p,.dystopia-site .digest-counts p,.dystopia-site .digest small,.dystopia-site .legend p,.dystopia-site .change-summary p{color:#a3adb9}
+.dystopia-site .digest-rule,.dystopia-site .driver-list button,.dystopia-site .digest-event{border-color:var(--border)}
+.dystopia-site .reviewed,.dystopia-site .auto{border-color:#354a40;border-radius:3px;color:#a0b9ab}
+.dystopia-site .stats strong{color:#eee}.dystopia-site .stats strong.orange{color:#ffb052}.dystopia-site .stats strong.green{color:var(--accent)}
+@media(min-width:1440px){.dystopia-hero{padding-left:64px;padding-right:64px}}
+@media(max-width:1199px){.dystopia-site header{flex-wrap:wrap;gap:12px 24px;padding-top:17px;padding-bottom:11px}.dystopia-site .brand{flex:1}.dystopia-site .language-switcher{order:2}.dystopia-site header nav{order:3;justify-content:center;width:100%;gap:32px}.dystopia-hero{padding-top:70px;padding-bottom:80px}.hero-intro h1{font-size:8.2vw}.glass-countdown{--tube-height:110px;gap:5.5vw}.glass-group:not(:last-child):after{right:calc(5.5vw / -2 - 7px);font-size:52px}.glass-bank{gap:7px}.glass-numeral{font-size:7.5vw}.hero-metrics{gap:18px}.hero-metric strong{font-size:26px}.metric-label{font-size:9px;letter-spacing:.17em}}
+@media(max-width:760px){.dystopia-site header{padding:18px 5% 8px}.dystopia-site .brand small{font-size:8px;letter-spacing:.13em}.brand-name{font-size:14px;letter-spacing:.22em}.dystopia-site header nav{gap:22px;font-size:10px;letter-spacing:.1em;justify-content:space-between;overflow-x:auto}.dystopia-site header nav a:first-child{display:inline-flex}.dystopia-hero{padding:62px 5% 68px}.hero-kicker{font-size:17px;margin-top:22px}.hero-tagline{font-size:16px;max-width:34em;margin:0 auto}.glass-countdown{--tube-height:90px;margin-top:42px;gap:4vw}.glass-bank{gap:5px}.glass-tube{border-radius:23px 23px 15px 15px}.glass-tube:before{inset:4px;border-radius:20px 20px 12px 12px}.glass-group:not(:last-child):after{right:calc(4vw / -2 - 4px);font-size:37px}.glass-unit{font-size:9px;letter-spacing:.16em;margin-top:23px}.hero-metrics{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:30px;margin-top:48px}.hero-metric strong{font-size:27px}.hero-metric small{font-size:12px}.metric-label{font-size:9px;letter-spacing:.16em}.dystopia-site footer{font-size:9px;padding:18px 5%;gap:14px}.dystopia-site footer a{line-height:1.8}.feed-overview{padding-top:28px}}
+@media(max-width:480px){.dystopia-site header{gap:12px}.dystopia-site .brand{gap:10px}.argus-mark{width:26px;height:26px}.argus-mark:after{width:8px;height:8px;left:7px;top:7px}.brand-name{font-size:12px}.dystopia-site .brand small{font-size:7px;max-width:28ch}.dystopia-site .language-switcher button{min-width:32px;padding:0 4px;font-size:9px}.dystopia-site header nav{gap:16px;font-size:9px}.dystopia-hero{padding-top:46px;padding-bottom:48px}.hero-intro h1{font-size:8vw;letter-spacing:.035em}.hero-kicker{font-size:13px;letter-spacing:.22em;margin:18px 0 16px}.hero-tagline{font-size:14px;max-width:28em}.hero-tagline span{display:block;margin-top:4px}.glass-countdown{--tube-height:99px;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 20px;margin-top:34px;max-width:350px}.glass-group:first-child{grid-column:1/-1;justify-self:center;width:76%}.glass-group:first-child:after{display:none}.glass-bank{gap:6px}.glass-numeral{font-size:58px}.glass-group:not(:first-child){--tube-height:78px}.glass-group:not(:first-child) .glass-numeral{font-size:47px}.glass-group:not(:last-child):after{right:-15px;font-size:32px}.glass-unit{margin-top:18px;font-size:9px;letter-spacing:.2em}.hero-metrics{margin-top:36px;gap:26px 12px}.hero-metric strong{font-size:23px;white-space:nowrap}.hero-metric small{font-size:11px;max-width:17em}.metric-label{font-size:8px;letter-spacing:.12em}.dystopia-site .main-tabs{gap:18px!important}.dystopia-site .main-tabs button{font-size:12px}.dystopia-site footer{display:block}.dystopia-site footer>a{margin-top:10px}.dystopia-site .news-item .change{position:static}}
+@media(prefers-reduced-motion:reduce){.dystopia-site *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+@media(max-width:480px){.dystopia-site header nav{flex-wrap:wrap;justify-content:center;column-gap:20px;row-gap:0;overflow:visible}.dystopia-site header nav a{min-height:32px}.dystopia-site header nav a[aria-current=page]:after{bottom:3px}}
+
+@media(max-width:480px){.hero-metric:first-child strong{font-size:clamp(17px,5.4vw,23px)}}

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./dystopia.css";
 
 export const metadata: Metadata = {
-  title: "Apocalypse Clock — Monitoring Machine Intelligence",
+  title: "Dystopia Clock — Green Argus AI Watch",
   description:
     "Real-world AI developments and an open scenario model: clock, news, history and sources.",
   other: {

@@ -1,7 +1,7 @@
 {
   "Часы апокалипсиса — Наблюдение за машинным интеллектом": {
-    "en": "Apocalypse Clock — Monitoring Machine Intelligence",
-    "es": "Reloj del Apocalipsis — Observatorio de la inteligencia artificial"
+    "en": "Dystopia Clock — Green Argus AI Watch",
+    "es": "Dystopia Clock — Observatorio de IA de Green Argus"
   },
   "Реальные события развития AI и открытая сценарная модель: часы, новости, история и источники.": {
     "en": "Real-world AI developments and an open scenario model: clock, news, history and sources.",
@@ -870,5 +870,65 @@
   "Отдаляет на {0} дн.": {
     "en": "Further away by {0} days",
     "es": "Se aleja {0} días"
+  },
+  "Время до порабощения человечества ИИ.": {
+    "en": "Time until AI enslaves humanity.",
+    "es": "Tiempo hasta que la IA someta a la humanidad."
+  },
+  "Если мы не повернём время вспять.": {
+    "en": "Unless we turn it back.",
+    "es": "A menos que lo hagamos retroceder."
+  },
+  "UTC · точка модели, не прогноз": {
+    "en": "UTC · a model point, not a forecast",
+    "es": "UTC · un punto del modelo, no un pronóstico"
+  },
+  "ИНДЕКС ДИСТОПИИ": {
+    "en": "DYSTOPIA INDEX",
+    "es": "ÍNDICE DE DISTOPÍA"
+  },
+  "выше = ближе": {
+    "en": "higher = closer",
+    "es": "más alto = más cerca"
+  },
+  "ЗА ПОСЛЕДНИЕ 7 ДНЕЙ": {
+    "en": "LAST 7 DAYS",
+    "es": "ÚLTIMOS 7 DÍAS"
+  },
+  "{0} дн.": {
+    "en": "{0} days",
+    "es": "{0} días"
+  },
+  "ОТОДВИНУТО ЗА ЭТОТ ГОД": {
+    "en": "TURNED BACK THIS YEAR",
+    "es": "TIEMPO GANADO ESTE AÑO"
+  },
+  "регулирование, проверки, надзор": {
+    "en": "regulation, verification, oversight",
+    "es": "regulación, verificación, supervisión"
+  },
+  "Часы": {
+    "en": "Clock",
+    "es": "Reloj"
+  },
+  "События": {
+    "en": "Events",
+    "es": "Eventos"
+  },
+  "Проект": {
+    "en": "A",
+    "es": "Un proyecto de"
+  },
+  "Независимые индексы ИИ": {
+    "en": "Independent AI indices",
+    "es": "Índices independientes de IA"
+  },
+  "Dystopia Clock — Green Argus: наблюдение за ИИ": {
+    "en": "Dystopia Clock — Green Argus AI Watch",
+    "es": "Dystopia Clock — Observatorio de IA de Green Argus"
+  },
+  "Событий, приблизивших дату: {0}": {
+    "en": "{0} events moved the date closer",
+    "es": "{0} eventos acercaron la fecha"
   }
 }

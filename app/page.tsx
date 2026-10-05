@@ -4,15 +4,14 @@ import {
   Radio,
   RefreshCw,
   ArrowUpRight,
-  Info,
   Activity,
-  Clock3,
   ShieldCheck,
   Search,
   ChevronDown,
   ExternalLink,
 } from "lucide-react";
-import { NixieDigit } from "@/components/clock/nixie-digit";
+import { DystopiaHero } from "@/components/clock/dystopia-hero";
+import { yearlyReversalDays } from "@/lib/clock-metrics";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import {
   Select,
@@ -82,7 +81,7 @@ export default function Home() {
     document.documentElement.lang = language;
     document.title = translate(
       language,
-      "Часы апокалипсиса — Наблюдение за машинным интеллектом",
+      "Dystopia Clock — Green Argus: наблюдение за ИИ",
     );
     document
       .querySelector('meta[name="description"]')
@@ -102,7 +101,20 @@ export default function Home() {
     [sources, setSources] = useState<SourceStatus[]>([]),
     [query, setQuery] = useState(""),
     [category, setCategory] = useState("Все события"),
-    [view, setView] = useState("feed");
+    [view, setView] = useState("clock");
+  useEffect(() => {
+    const syncView = () => {
+      const views: Record<string, string> = { "": "clock", "#journal": "feed", "#monitor": "clock", "#events": "feed", "#history": "history", "#method": "method", "#sources": "sources" };
+      const next = views[window.location.hash];
+      if (next) {
+        setView(next);
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+    };
+    syncView();
+    window.addEventListener("hashchange", syncView);
+    return () => window.removeEventListener("hashchange", syncView);
+  }, []);
   const [refreshResult, setRefreshResult] = useState<{
       added: number;
       days: number;
@@ -272,25 +284,23 @@ export default function Home() {
     );
   };
   return (
-    <main>
+    <main className={`dystopia-site ${view === "clock" ? "clock-view" : "content-view"}`}>
       <header>
-        <a className="brand" href="#monitor" onClick={() => setView("feed")}>
-          <Clock3 size={24} />
+        <a className="brand" href="#monitor" onClick={() => setView("clock")}>
+          <span className="argus-mark" aria-hidden="true" />
           <div className="brand-copy">
-            <h1>{t("Часы апокалипсиса")}</h1>
+            <span className="brand-name">GREEN ARGUS</span>
             <small>{t("НАБЛЮДЕНИЕ ЗА МАШИННЫМ ИНТЕЛЛЕКТОМ")}</small>
           </div>
         </a>
         <nav aria-label={t("Основная навигация")}>
-          <a href="#monitor" onClick={() => setView("feed")}>
-            {t("Мониторинг")}
-          </a>
-          <a href="#journal" onClick={() => setView("history")}>
-            {t("История AI")}
-          </a>
-          <a href="#journal" onClick={() => setView("method")}>
-            {t("Методология")}
-          </a>
+          {[
+            ["clock", "monitor", "Часы"], ["feed", "events", "События"],
+            ["history", "history", "История AI"], ["method", "method", "Методология"],
+            ["sources", "sources", "Источники"],
+          ].map(([key, hash, label]) => (
+            <a key={key} href={`#${hash}`} aria-current={view === key ? "page" : undefined} onClick={() => setView(key)}>{t(label)}</a>
+          ))}
         </nav>
         <div
           className="language-switcher"
@@ -317,84 +327,13 @@ export default function Home() {
           ))}
         </div>
       </header>
-      <section
-        className="clock-panel"
-        id="monitor"
-        aria-label={t("Часы апокалипсиса")}
-      >
-        <div className="clock-main">
-          <div
-            className="countdown nixie-countdown"
-            role="timer"
-            aria-live="off"
-            aria-label={t(
-              "До условной даты {0} дней {1} часов {2} минут {3} секунд",
-              digits[0],
-              digits[1],
-              digits[2],
-              digits[3],
-            )}
-          >
-            {digits.map((n, i) => (
-              <div className="digit" key={i}>
-                <div className="nixie-bank">
-                  {String(n)
-                    .padStart(i === 0 ? 4 : 2, "0")
-                    .split("")
-                    .map((char, j) => (
-                      <NixieDigit key={j} value={char} />
-                    ))}
-                </div>
-                <span className="nixie-unit">
-                  {t(["ДНЕЙ", "ЧАСОВ", "МИНУТ", "СЕКУНД"][i])}
-                </span>
-              </div>
-            ))}
-          </div>
-          <div className="clock-bottom">
-            <span>
-              <span className="label">{t("СЦЕНАРНАЯ ДАТА")}</span>
-              <strong>
-                {date(target)} <small>UTC</small>
-              </strong>
-            </span>
-            <p>
-              <Info size={16} />
-              {t("1 балл индекса = 30 условных дней.")}
-              <br />
-              <a href="#journal" onClick={() => setView("method")}>
-                {t("Как рассчитываются часы")}
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className="dial-panel">
-          <span className="label">{t("СЦЕНАРНЫЙ ИНДЕКС")}</span>
-          <div className="risk">
-            <b>{number(index)}</b>
-            <span>{t("из 100")}</span>
-          </div>
-          <div
-            className="index-scale"
-            role="img"
-            aria-label={t(
-              "Сценарный индекс {0} из 100; чем выше, тем ближе условная дата",
-              number(index),
-            )}
-          >
-            <div style={{ width: `${index}%` }} />
-          </div>
-          <div className="scale-labels">
-            <span>{t("0 · дальше")}</span>
-            <span>{t("100 · ближе")}</span>
-          </div>
-          <p>
-            {t("Чем выше индекс,")} <br />
-            {t("тем ближе условная дата.")}
-          </p>
-          <small>{t("Баллы модели, не вероятность.")}</small>
-        </div>
-      </section>
+      {view === "clock" && <DystopiaHero
+        language={language} digits={digits} target={target} index={index}
+        movement={movement}
+        closerEvents={week.events.filter((event) => (weights[event.id] ?? 0) > 0).length}
+        reversedDays={yearlyReversalDays(events, weights, today)}
+      />}
+      <div className="feed-overview" hidden={view !== "feed"}>
       <section
         className="change-summary"
         aria-label={t("Что изменилось за неделю")}
@@ -493,8 +432,9 @@ export default function Home() {
           </strong>
         </div>
       </div>
-      <section id="journal" className="journal">
-        <Tabs value={view} onValueChange={setView}>
+      </div>
+      <section id="journal" className="journal" hidden={view === "clock"}>
+        <Tabs value={view} onValueChange={(next) => { setView(next); window.history.replaceState(null, "", `#${next === "feed" ? "events" : next}`); }}>
           <TabsList className="main-tabs" variant="line">
             <TabsTrigger value="feed">
               {t("Лента событий")}
@@ -904,13 +844,9 @@ export default function Home() {
         </Tabs>
       </section>
       <footer>
-        <a className="footer-brand" href="#">
-          {t("Часы апокалипсиса")}
-        </a>
         <span>{t("Будущее не предопределено.")}</span>
-        <a href="#journal" onClick={() => setView("method")}>
-          {t("О модели")}
-          <ArrowUpRight size={14} />
+        <a href="#method" onClick={() => setView("method")}>
+          <span>{t("Проект")} <b>GREEN ARGUS</b>{language === "en" ? " PROJECT" : ""} · {t("Независимые индексы ИИ")}</span>
         </a>
       </footer>
       {seconds === 0 && (
